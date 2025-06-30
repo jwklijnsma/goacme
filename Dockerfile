@@ -12,6 +12,6 @@ RUN     apt-get update \
 	;
 RUN wget https://github.com/go-acme/lego/releases/download/v4.23.1/lego_v4.23.1_linux_amd64.tar.gz
 RUN tar -xvzf lego_v4.23.1_linux_amd64.tar.gz
-RUN mv lego /usr/local/bin/lego 
-RUN chmod +x /usr/local/bin/lego
+RUN mv lego /lego 
+RUN chmod +x /lego
 CMD ["/bin/bash"]
